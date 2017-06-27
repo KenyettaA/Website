@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Bootstrap Thing-->
+  <title>HomePage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="homepage.css" media="screen" />
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!--MY NAVIGATION BAR CODE-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Kenyetta Akowa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutme">ABOUT ME</a></li>
+        <li><a href="#gwc2017">GWC 2017</a></li>
+        <li><a href="#portfolio/works">PORTFOLIO/WORKS</a></li>
+        <li><a href="#codingexperience">CODING EXPERIENCE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--THIS IS THE PLACE WHERE THEY SEE MY COOL SLOGAN AND CAN SUBSCRIBE TO MY WEEKLY UPDATES! YEEEEEEEEEEEET!-->
+<div class="jumbotron text-center">
+  <h1>Any Time, Any Place, Code.</h1>
+    <h2>#AnimeFreak</h2>
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Enter Your Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div style="text-align:center">
+  <img src="IMG_2550.JPG" onmouseover="rollover(this)" onmouseout="mouseaway(this)" alt="Image of Me" width="434" height="566"/>
+  <script>
+
+    function rollover(my_image)
+    {
+
+        my_image.src = 'IMG_6287.JPG';
+
+    }
+    function mouseaway(my_image)
+    {
+
+        my_image.src = "IMG_2550.JPG";
+
+    }
+    function visitPage(){
+        window.location='http://www.example.com';
+    }
+
+  </script>
+</div>
+
+<div class="container-fluid">
+  <h3> Want to know more about me or contact me? Then hit subscribe, and I'll make sure to email you!</h3>
+</div>
+</body>
+</html>

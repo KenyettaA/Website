@@ -1,0 +1,22 @@
+<html>
+<style>
+
+</style>
+<body>
+
+<h1>Changing the background image!!!</h1>
+<button type="button" onclick="myFunction()">Anime Needs!</button>
+
+<script>
+function myFunction() {
+  var colors = ["red", "green", "purple", "pink"];
+  var rand = Math.floor(Math.random() * colors.length);
+   //1.234, 3.45
+  console.log(rand);
+  var color = colors[rand]
+  document.body.style.background = color;
+}
+</script>
+
+</body>
+</html>

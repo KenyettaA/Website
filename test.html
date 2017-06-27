@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<div style="height:150px">
+    <div>
+        <h1 id="heading"><center>That's how i change color!!</center></h1>
+    </div>
+    <br><br>
+    <div  class="bordered" id="fancy">
+        <center>I behave like a chameleon!!</center>
+    </div>
+    <div style="margin-top:10%; font-size:1em; font-weight:bold;">CSS + JS = AWESOME!!<br><br>Code By Punit gajjar</div>
+</div>
+<script>
+    var myArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+setInterval(function () {
+    var rand = myArray[Math.round(Math.random() * (myArray.length - 1))];
+    var rand1 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+    var rand2 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+    var rand3 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+    var rand4 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+    var rand5 = myArray[Math.round(Math.random() * (myArray.length - 1))];  
+    document.getElementById("fancy").style.background= '#'+rand+rand2+rand3+rand1+rand5+rand4;
+  document.body.style.background= '#'+rand+rand1+rand2+rand3+rand4+rand5;
+    setTimeout(function () {
+        var rand = myArray[Math.round(Math.random() * (myArray.length - 1))];
+      var rand1 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+      var rand2 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+      var rand3 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+      var rand4 = myArray[Math.round(Math.random() * (myArray.length - 1))];
+      var rand5 = myArray[Math.round(Math.random() * (myArray.length - 1))];  
+      document.getElementById("fancy").style.background= '#'+rand+rand2+rand1+rand3+rand5+rand4;
+      document.body.style.background= '#'+rand+rand1+rand3+rand2+rand4+rand5;
+    }, 1000);   
+}, 1000);
+</script>
